@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">ManagementOfWife</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="type_plan_entries">
+        <item>In</item>
+        <item>Out</item>
+    </string-array>
+
+    <string-array name="budget_source_entries">
+        <item>Salary</item>
+        <item>Bonus</item>
+        <item>From relative</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="budget_category_parent_entries">
+        <item>Living Expense</item>
+        <item>Parents supporting</item>
+        <item>For children</item>
+        <item>Healthy life</item>
+        <item>Education</item>
+        <item>Appearance</item>
+        <item>Social activities</item>
+    </string-array>
+
+    <string-array name="budget_category_living_expense_entries">
+        <item>Electric bill</item>
+        <item>Water bill</item>
+        <item>Food</item>
+        <item>House renting</item>
+        <item>Other bills</item>
+        <item>Credit card paid</item>
+        <item>Social activities</item>
+    </string-array>
+
+    <string-array name="budget_category_parents_supporting_entries">
+        <item>Monthly support</item>
+        <item>Parents sickness</item>
+    </string-array>
+
+    <string-array name="budget_category_for_children_entries">
+        <item>Tuition fee</item>
+        <item>Children social activities</item>
+    </string-array>
+
+    <string-array name="budget_category_healthy_life_entries">
+        <item>Hospital fee</item>
+        <item>Medical checking</item>
+        <item>Medicine</item>
+        <item>Gym and work out</item>
+    </string-array>
+
+    <string-array name="budget_category_education_entries">
+        <item>Buying book</item>
+        <item>Tuition fee</item>
+    </string-array>
+
+    <string-array name="budget_category_appearance_entries">
+        <item>Change hair style</item>
+        <item>Buying clothes</item>
+        <item>Spa</item>
+    </string-array>
+
+    <string-array name="budget_category_social_activities_entries">
+        <item>Traveling</item>
+        <item>Eating out</item>
+    </string-array>
+</resources>

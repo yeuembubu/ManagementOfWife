@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/tvTypePlanInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Type"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSourcePlanInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:text="Source from"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/tvTypePlanInfo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSourceChildPlanInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="25dp"
+        android:text="Budget child"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spTypePlanInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:entries="@array/type_plan_entries"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvTypePlanInfo"
+        app:layout_constraintTop_toBottomOf="@id/tvTypePlanInfo" />
+
+    <Spinner
+        android:id="@+id/spSourcePlanInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="@id/spTypePlanInfor"
+        app:layout_constraintStart_toStartOf="@id/tvSourcePlanInfo"
+        app:layout_constraintTop_toBottomOf="@id/tvSourcePlanInfo" />
+
+    <Spinner
+        android:id="@+id/spSourceChildPlanInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="@id/spTypePlanInfor"
+        app:layout_constraintStart_toStartOf="@id/tvSourceChildPlanInfo"
+        app:layout_constraintTop_toBottomOf="@id/tvSourcePlanInfo" />
+
+    <TextView
+        android:id="@+id/tvNotePlanInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Details note"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvTypePlanInfo"
+        app:layout_constraintTop_toBottomOf="@id/spTypePlanInfor" />
+
+    <EditText
+        android:id="@+id/etNotePlanInfo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/tvNotePlanInfo" />
+
+    <TextView
+        android:id="@+id/tvPayDatePlanInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Pay Date"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvNotePlanInfo"
+        app:layout_constraintTop_toBottomOf="@id/etNotePlanInfo" />
+
+    <EditText
+        android:id="@+id/dpPayDatePlanInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvPayDatePlanInfo"
+        app:layout_constraintTop_toBottomOf="@id/tvPayDatePlanInfo" />
+
+    <TextView
+        android:id="@+id/tvPayMethodPlanInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Paying method"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/tvPayDatePlanInfo"
+        app:layout_constraintStart_toStartOf="@id/tvSourcePlanInfo"
+        app:layout_constraintTop_toBottomOf="@id/etNotePlanInfo" />
+
+    <Spinner
+        android:id="@+id/spPayMethodPlanInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="@id/dpPayDatePlanInfo"
+        app:layout_constraintStart_toStartOf="@id/spSourcePlanInfor"
+        app:layout_constraintTop_toBottomOf="@id/tvPayMethodPlanInfo" />
+
+    <Button
+        android:id="@+id/btnPayReceivePlanInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Actual paid"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/dpPayDatePlanInfo"
+        app:layout_constraintTop_toBottomOf="@id/dpPayDatePlanInfo" />
+
+</android.support.constraint.ConstraintLayout>
