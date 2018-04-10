@@ -6,6 +6,11 @@
 
     <string name="action_settings">Settings</string>
 
+    <string-array name="paying_method_entries">
+        <item>Cash/Credit</item>
+        <item>Card/Debit Card</item>
+    </string-array>
+
     <string-array name="type_plan_entries">
         <item>In</item>
         <item>Out</item>
